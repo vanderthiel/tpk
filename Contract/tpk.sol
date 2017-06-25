@@ -10,6 +10,7 @@ contract Bomen {
     // Constructor
     function Bomen() {
         minter = msg.sender;
+        balances[msg.sender] = 0;
     }
 
     // Geef quota uit aan de ontvanger, zodat hij een quota aan bomen kan genereren
@@ -28,18 +29,22 @@ contract Bomen {
 
     // Verzaag bomen in individuele planken en restmateriaal. Dit vertaalt zich in nieuwe contracten
     function verzagen(address receiver, uint boomamount, uint plankamount) {
-        if (balances[msg.sender] < amount) return;
+        if (balances[msg.sender] < boomamount) return;
         // todo: vertaling naar andere contracten
     }
 }
 
-
+// ======================================================================================================================
 
 contract Planken {
     mapping (address => uint) public balances;
 
+    event Sent(address from, address to, uint amount);
+    
     // Constructor
-    function Planken(){}
+    function Planken(){
+        balances[msg.sender] = 0;
+    }
 
     // Stuur planken op transport, in eigendom van de transporteur, of lever af bij meubelmakerij
     function transfer(address receiver, uint amount) {
@@ -52,13 +57,17 @@ contract Planken {
     // todo: functie om planken aan te maken vanuit bomen
 }
 
-
+// ======================================================================================================================
 
 contract Zaagsel {
     mapping (address => uint) public balances;
     
+    event Sent(address from, address to, uint amount);
+    
     // Constructor
-    function Zaagsel(){}
+    function Zaagsel(){
+        balances[msg.sender] = 0;
+    }
 
     // Stuur zaagsel op transport, in eigendom van de transporteur, of lever af bij zaagselverwerking
     function transfer(address receiver, uint amount) {
