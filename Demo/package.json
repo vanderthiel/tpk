@@ -1,0 +1,35 @@
+{
+  "name": "tpk",
+  "namespace": "ethereum",
+  "version": "0.1.0",
+  "description": "Transparante Productie Keten",
+  "dependencies": {
+    "web3": "^0.19.1"
+  },
+  "homepage": "https://github.com/vanderthiel/tpk",
+  "keywords": [
+    "ethereum",
+    "javascript",
+    "API",
+    "TPK"
+  ],
+  "author": "EEJ",
+  "authors": [
+    {
+      "name": "Elmar Dongelmains",
+      "email": "",
+      "url": ""
+    },
+    {
+      "name": "Jeroen Mulder",
+      "email": "",
+      "homepage": ""
+    },
+    {
+      "name": "Edwin van der Thiel",
+      "email": "",
+      "url": "https://github.com/vanderthiel"
+    }
+  ],
+  "license": "LGPL-3.0"
+}
