@@ -1,0 +1,94 @@
+{
+  "contract_name": "Zaagsel",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "balances",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "receiver",
+          "type": "address"
+        },
+        {
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "transfer",
+      "outputs": [
+        {
+          "name": "sufficient",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "addr",
+          "type": "address"
+        }
+      ],
+      "name": "getBalance",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "Sent",
+      "type": "event"
+    }
+  ],
+  "unlinked_binary": "0x6060604052341561000c57fe5b5b600160a060020a0333166000908152602081905260408120555b5b6101c1806100376000396000f300606060405263ffffffff60e060020a60003504166327e235e38114610037578063a9059cbb14610065578063f8b2cb4f14610098575bfe5b341561003f57fe5b610053600160a060020a03600435166100c6565b60408051918252519081900360200190f35b341561006d57fe5b610084600160a060020a03600435166024356100d8565b604080519115158252519081900360200190f35b34156100a057fe5b610053600160a060020a0360043516610176565b60408051918252519081900360200190f35b60006020819052908152604090205481565b600160a060020a0333166000908152602081905260408120548290101561010157506000610170565b600160a060020a033381166000818152602081815260408083208054889003905593871680835291849020805487019055835192835282015280820184905290517f3990db2d31862302a685e8086b5755072a6e2b5b780af1ee81ece35ee3cd33459181900360600190a15060015b92915050565b600160a060020a0381166000908152602081905260409020545b9190505600a165627a7a7230582069d86eb8b00ee9b4a4e05d14c1484c61c4e757045a3c41c84d26f2a0f7f2dd590029",
+  "networks": {},
+  "schema_version": "0.0.5",
+  "updated_at": 1499345864957
+}

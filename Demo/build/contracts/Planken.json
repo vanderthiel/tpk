@@ -1,0 +1,71 @@
+{
+  "contract_name": "Planken",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "balances",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "receiver",
+          "type": "address"
+        },
+        {
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "transfer",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "Sent",
+      "type": "event"
+    }
+  ],
+  "unlinked_binary": "0x6060604052341561000c57fe5b5b600160a060020a0333166000908152602081905260408120555b5b61014f806100376000396000f300606060405263ffffffff60e060020a60003504166327e235e3811461002c578063a9059cbb1461005a575bfe5b341561003457fe5b610048600160a060020a036004351661007b565b60408051918252519081900360200190f35b341561006257fe5b610079600160a060020a036004351660243561008d565b005b60006020819052908152604090205481565b600160a060020a033316600090815260208190526040902054819010156100b35761011f565b600160a060020a033381166000818152602081815260408083208054879003905593861680835291849020805486019055835192835282015280820183905290517f3990db2d31862302a685e8086b5755072a6e2b5b780af1ee81ece35ee3cd33459181900360600190a15b50505600a165627a7a7230582084a2e9d69ff3d5cd8706a2cbbde639c99426bcefa9e6fac32e39d63da186588a0029",
+  "networks": {},
+  "schema_version": "0.0.5",
+  "updated_at": 1499345864957
+}
